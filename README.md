@@ -1,4 +1,4 @@
-# Report
+# Report 
 
 ## Statistics computed inside the controller
 Principle: Single Responsibility  
