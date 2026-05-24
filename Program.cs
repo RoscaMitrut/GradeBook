@@ -6,8 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-var api_key = "asdfasdf12341234asdfasdf";
-
 builder.Services.AddSingleton<GradeExternalInitMemoryRepository>();
 builder.Services.AddSingleton<IGradeReader>(x => x.GetRequiredService<GradeExternalInitMemoryRepository>());
 builder.Services.AddSingleton<IGradeWriter>(x => x.GetRequiredService<GradeExternalInitMemoryRepository>());
