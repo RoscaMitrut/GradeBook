@@ -3,7 +3,7 @@ using Siemens.Internship2026.GradeBook.Repositories;
 using Siemens.Internship2026.GradeBook.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var api_key = "asdfasdf12341234asdfasdf";
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<GradeExternalInitMemoryRepository>();
