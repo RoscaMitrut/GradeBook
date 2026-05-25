@@ -18,7 +18,7 @@ namespace Siemens.Internship2026.GradeBook.Services
 
             return new GradeStatisticsResult(
                 TotalCount: grades.Count(),
-                AverageValue: grades.Any() ? grades.Average(i => i.Value) / grades.Count() : 0,
+                AverageValue: grades.Any() ? grades.Average(i => i.Value) : 0,
                 RetrievedAt: DateTime.UtcNow
             );
 
